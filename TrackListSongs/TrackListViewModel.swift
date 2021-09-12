@@ -9,13 +9,17 @@ import Foundation
 
 protocol TrackListViewModelProtocol: AnyObject {
     var tracks: [Track] { get }
+    var rowHeight: Float { get }
     func additionTracks(completion: @escaping() -> Void)
     func numberOfRows() -> Int
     func cellViewModel(at indexPath: IndexPath) -> TrackCellViewModelProtocol
-//    func detailsViewModel(at indexPath: IndexPath) -> TrackDetailsViewModelProtocol
+    func detailsViewModel(at indexPath: IndexPath) -> TrackDetailsViewModelProtocol
 }
 
 class TrackListViewModel: TrackListViewModelProtocol {
+    var rowHeight: Float {
+        80
+    }
     
     var tracks: [Track] = []
     
@@ -31,11 +35,11 @@ class TrackListViewModel: TrackListViewModelProtocol {
     
     func cellViewModel(at indexPath: IndexPath) -> TrackCellViewModelProtocol {
         let track = tracks[indexPath.row]
-        return TrackCellViewModel(track: track)
+        return TrackCellViewModel(track: track, heightCell: 80)
     }
     
-//    func detailsViewModel(at indexPath: IndexPath) -> TrackDetailsViewModelProtocol {
-//        let track = tracks[indexPath.row]
-//        return TrackDetailsViewModel(track: track)
-//    }
+    func detailsViewModel(at indexPath: IndexPath) -> TrackDetailsViewModelProtocol {
+        let track = tracks[indexPath.row]
+        return TrackDetailsViewModel(track: track)
+    }
 }

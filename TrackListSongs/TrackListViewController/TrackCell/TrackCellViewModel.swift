@@ -11,6 +11,7 @@ protocol TrackCellViewModelProtocol: AnyObject {
     var nameSong: String { get }
     var artist: String { get }
     var image: String { get }
+    
     init(track: Track)
 }
 

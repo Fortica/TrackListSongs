@@ -71,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				6AC56B4526ED00EF00D5ABE9 /* TrackListViewController */,
+				6AC56B4D26ED025A00D5ABE9 /* TrackTableViewController.swift */,
+				6AC56B4826ED015B00D5ABE9 /* TrackListViewModel.swift */,
 				6A7EB2EF26DD5D05001E0789 /* TrackDetails */,
 				6A7EB2EC26DD5B88001E0789 /* Models */,
 				6A7EB2F626DD650F001E0789 /* Services */,
@@ -137,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				6AC56B4A26ED016B00D5ABE9 /* TrackCell */,
-				6AC56B4826ED015B00D5ABE9 /* TrackListViewModel.swift */,
 			);
 			path = TrackListViewController;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 			children = (
 				6AC56B4F26ED028C00D5ABE9 /* TrackTableViewCell.swift */,
 				6AC56B5126ED029F00D5ABE9 /* TrackCellViewModel.swift */,
-				6AC56B4D26ED025A00D5ABE9 /* TrackTableViewController.swift */,
 			);
 			path = TrackCell;
 			sourceTree = "<group>";
