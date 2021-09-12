@@ -45,5 +45,4 @@ class TrackDetailsViewModel: TrackDetailsViewModelProtocol {
     func favoriteButtonPressed() {
         isFavorite.toggle()
     }
-    
 }

@@ -8,9 +8,7 @@
 import UIKit
 
 class TrackTableViewCell: UITableViewCell {
-    
-    //var rowHeightCell: CGFloat!
-    
+        
     var viewModel: TrackCellViewModelProtocol! {
         didSet {
             var content = defaultContentConfiguration()

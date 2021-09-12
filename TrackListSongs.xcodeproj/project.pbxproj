@@ -13,11 +13,11 @@
 		6A23817026DC29AD0034760D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A23816E26DC29AD0034760D /* Main.storyboard */; };
 		6A23817226DC29AE0034760D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A23817126DC29AE0034760D /* Assets.xcassets */; };
 		6A23817526DC29AE0034760D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A23817326DC29AE0034760D /* LaunchScreen.storyboard */; };
+		6A6A7E6126EE4E3200D0F449 /* TrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC56B4D26ED025A00D5ABE9 /* TrackTableViewController.swift */; };
 		6A7EB2EE26DD5B9A001E0789 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EB2ED26DD5B9A001E0789 /* Track.swift */; };
 		6A7EB2F126DD5D52001E0789 /* TrackDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EB2F026DD5D52001E0789 /* TrackDetailsViewModelProtocol.swift */; };
 		6A7EB2F826DD6534001E0789 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EB2F726DD6534001E0789 /* DataManager.swift */; };
 		6AC56B4926ED015B00D5ABE9 /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC56B4826ED015B00D5ABE9 /* TrackListViewModel.swift */; };
-		6AC56B4E26ED025A00D5ABE9 /* TrackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC56B4D26ED025A00D5ABE9 /* TrackTableViewController.swift */; };
 		6AC56B5026ED028C00D5ABE9 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC56B4F26ED028C00D5ABE9 /* TrackTableViewCell.swift */; };
 		6AC56B5226ED029F00D5ABE9 /* TrackCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC56B5126ED029F00D5ABE9 /* TrackCellViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -70,9 +70,7 @@
 		6A23816726DC29AD0034760D /* TrackListSongs */ = {
 			isa = PBXGroup;
 			children = (
-				6AC56B4526ED00EF00D5ABE9 /* TrackListViewController */,
-				6AC56B4D26ED025A00D5ABE9 /* TrackTableViewController.swift */,
-				6AC56B4826ED015B00D5ABE9 /* TrackListViewModel.swift */,
+				6AC56B4526ED00EF00D5ABE9 /* TrackList */,
 				6A7EB2EF26DD5D05001E0789 /* TrackDetails */,
 				6A7EB2EC26DD5B88001E0789 /* Models */,
 				6A7EB2F626DD650F001E0789 /* Services */,
@@ -135,12 +133,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		6AC56B4526ED00EF00D5ABE9 /* TrackListViewController */ = {
+		6AC56B4526ED00EF00D5ABE9 /* TrackList */ = {
 			isa = PBXGroup;
 			children = (
 				6AC56B4A26ED016B00D5ABE9 /* TrackCell */,
+				6AC56B4D26ED025A00D5ABE9 /* TrackTableViewController.swift */,
+				6AC56B4826ED015B00D5ABE9 /* TrackListViewModel.swift */,
 			);
-			path = TrackListViewController;
+			path = TrackList;
 			sourceTree = "<group>";
 		};
 		6AC56B4A26ED016B00D5ABE9 /* TrackCell */ = {
@@ -227,9 +227,9 @@
 				6A7EB2F826DD6534001E0789 /* DataManager.swift in Sources */,
 				6A23816D26DC29AD0034760D /* TrackDetailsViewController.swift in Sources */,
 				6A23816926DC29AD0034760D /* AppDelegate.swift in Sources */,
-				6AC56B4E26ED025A00D5ABE9 /* TrackTableViewController.swift in Sources */,
 				6AC56B5026ED028C00D5ABE9 /* TrackTableViewCell.swift in Sources */,
 				6A23816B26DC29AD0034760D /* SceneDelegate.swift in Sources */,
+				6A6A7E6126EE4E3200D0F449 /* TrackTableViewController.swift in Sources */,
 				6AC56B5226ED029F00D5ABE9 /* TrackCellViewModel.swift in Sources */,
 				6A7EB2EE26DD5B9A001E0789 /* Track.swift in Sources */,
 			);

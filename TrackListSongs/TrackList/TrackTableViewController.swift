@@ -20,7 +20,7 @@ class TrackTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = TrackListViewModel()
-//        tableView.rowHeight = CGFloat(viewModel.rowHeight)
+        tableView.rowHeight = 80
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -45,6 +45,6 @@ class TrackTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             tableView.deselectRow(at: indexPath, animated: true)
             let detailsViewModel = viewModel.detailsViewModel(at: indexPath)
-            performSegue(withIdentifier: "ShowDetails", sender: detailsViewModel)
+            performSegue(withIdentifier: "showDetails", sender: detailsViewModel)
     }
 }

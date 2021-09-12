@@ -40,9 +40,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="M2E-aJ-rla" kind="show" identifier="showDetails" id="Rgt-xw-r6z"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -51,6 +48,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Track List" id="CNF-pw-LSQ"/>
+                    <connections>
+                        <segue destination="M2E-aJ-rla" kind="show" identifier="showDetails" id="4Hg-MP-9iR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHz-Wx-qqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,28 +78,28 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAV-cA-fF0">
-                                <rect key="frame" x="377.5" y="187" width="20.5" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9U-LW-8pH">
+                                <rect key="frame" x="365.5" y="183" width="20.5" height="22"/>
                                 <state key="normal" image="heart.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="toggleFavorite:" destination="M2E-aJ-rla" eventType="touchUpInside" id="PKV-ji-ZoP"/>
+                                    <action selector="toggleFavorite:" destination="M2E-aJ-rla" eventType="touchUpInside" id="kPC-Ws-vBu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ucf-v0-t0q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="huA-1N-6qL" firstAttribute="top" secondItem="V9U-LW-8pH" secondAttribute="bottom" constant="12" id="TQY-jX-TrX"/>
                             <constraint firstItem="127-eV-gYK" firstAttribute="top" secondItem="Ucf-v0-t0q" secondAttribute="top" constant="129" id="ZM3-Wo-1GQ"/>
                             <constraint firstItem="huA-1N-6qL" firstAttribute="leading" secondItem="Ucf-v0-t0q" secondAttribute="leading" constant="16" id="a2P-fZ-1yS"/>
-                            <constraint firstItem="Ucf-v0-t0q" firstAttribute="trailing" secondItem="nAV-cA-fF0" secondAttribute="trailing" constant="16" id="eHc-Yq-Nxa"/>
-                            <constraint firstItem="huA-1N-6qL" firstAttribute="top" secondItem="nAV-cA-fF0" secondAttribute="bottom" constant="8" symbolic="YES" id="fzM-pS-acB"/>
+                            <constraint firstItem="Ucf-v0-t0q" firstAttribute="trailing" secondItem="V9U-LW-8pH" secondAttribute="trailing" constant="28" id="erQ-hw-SsZ"/>
                             <constraint firstItem="Ucf-v0-t0q" firstAttribute="trailing" secondItem="huA-1N-6qL" secondAttribute="trailing" constant="16" id="oZS-4s-Mmf"/>
                             <constraint firstItem="Ucf-v0-t0q" firstAttribute="bottom" secondItem="127-eV-gYK" secondAttribute="bottom" constant="325" id="zJK-S3-upD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ret-Og-By6"/>
                     <connections>
-                        <outlet property="favoriteButton" destination="nAV-cA-fF0" id="0Ns-6A-eVR"/>
+                        <outlet property="favoriteButton" destination="V9U-LW-8pH" id="rtg-73-8NN"/>
                         <outlet property="imageCover" destination="127-eV-gYK" id="arU-9r-b7H"/>
                         <outlet property="trackTitleLabel" destination="uH3-ah-WYr" id="lYE-MQ-EPd"/>
                     </connections>
